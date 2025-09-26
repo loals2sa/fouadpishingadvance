@@ -57,8 +57,8 @@ FOUAD Ultra is not just another phishing tool - it's a **complete cybersecurity 
 
 ```bash
 # Clone the repository
-git clone https://github.com/loals2sa/fouad-ultra.git
-cd fouad-ultra
+git clone https://github.com/loals2sa/fouadpishingadvance.git
+cd FOUAD ADVANCE PISHING
 
 # Make executable and run
 chmod +x fouad.sh
