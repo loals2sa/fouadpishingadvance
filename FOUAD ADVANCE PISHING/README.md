@@ -61,8 +61,8 @@ git clone https://github.com/loals2sa/fouad-ultra.git
 cd fouad-ultra
 
 # Make executable and run
-chmod +x FOUAD.SH
-./FOUAD.SH
+chmod +x fouad.sh
+./fouad.sh
 ```
 
 ### 🎯 **First Launch**
