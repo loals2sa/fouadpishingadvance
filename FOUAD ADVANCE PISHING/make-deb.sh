@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Make Deb Package for Zphisher (^.^)
-_PACKAGE=zphisher
-_VERSION=2.3.5
+# Make Deb Package for FOUAD Ultra Advanced Framework 🚀
+_PACKAGE=fouad-ultra
+_VERSION=2.3.5-FOUAD-ULTRA
 _ARCH="all"
 PKG_NAME="${_PACKAGE}_${_VERSION}_${_ARCH}.deb"
 
@@ -30,10 +30,10 @@ cat <<- CONTROL_EOF > ./build_env/DEBIAN/control
 Package: ${_PACKAGE}
 Version: ${_VERSION}
 Architecture: ${_ARCH}
-Maintainer: @htr-tech
+Maintainer: FOUAD ZULOF <@loals2sa>
 Depends: ${_depend}
-Homepage: https://github.com/htr-tech/zphisher
-Description: An automated phishing tool with 30+ templates. This Tool is made for educational purpose only !
+Homepage: https://github.com/loals2sa/fouad-ultra
+Description: FOUAD Ultra Advanced Phishing Framework - The most advanced cybersecurity education tool with 35+ templates, 3D holographic interface, Telegram bot integration, and AI-powered features. Educational purpose only!
 CONTROL_EOF
 
 cat <<- PRERM_EOF > ./build_env/DEBIAN/prerm
@@ -46,6 +46,6 @@ chmod 755 ./build_env/DEBIAN
 chmod 755 ./build_env/DEBIAN/{control,prerm}
 cp -fr scripts/launch.sh ./build_env/$_bin_dir/$_PACKAGE
 chmod 755 ./build_env/$_bin_dir/$_PACKAGE
-cp -fr .github/ .sites/ LICENSE README.md zphisher.sh ./build_env/$_opt_dir
+cp -fr .github/ .sites/ LICENSE README.md fouad-ultra.sh ./build_env/$_opt_dir
 dpkg-deb --build ./build_env ${PKG_NAME}
 rm -fr ./build_env
