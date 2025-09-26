@@ -61,8 +61,8 @@ git clone https://github.com/loals2sa/fouad-ultra.git
 cd fouad-ultra
 
 # Make executable and run
-chmod +x zphisher.sh
-./zphisher.sh
+chmod +x FOUAD.SH
+./FOUAD.SH
 ```
 
 ### 🎯 **First Launch**
